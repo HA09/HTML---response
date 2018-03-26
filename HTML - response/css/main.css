@@ -1,0 +1,540 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 5, main.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, main.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 30, main.scss */
+body {
+  line-height: 1;
+  color: #73523f; }
+
+/* line 35, main.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 38, main.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 41, main.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 46, main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: Meiryo;
+  src: url(‘../fonts/MEIRYO.ttc’) format(‘truetype’);
+  font-weight: normal;
+  font-style: normal; }
+/* line 59, main.scss */
+div.inner {
+  max-width: 960px;
+  margin: 0 auto; }
+
+/* line 64, main.scss */
+div.clear-fix {
+  clear: both; }
+
+/* line 68, main.scss */
+#header {
+  border-top: 5px solid #f0831e;
+  width: 100%;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 1px;
+  height: 168px;
+  font-family: Meiryo; }
+  /* line 78, main.scss */
+  #header div.inner div.logo {
+    float: left;
+    padding: 10px 0px 5px 0px; }
+    /* line 83, main.scss */
+    #header div.inner div.logo p {
+      padding-bottom: 30px;
+      padding-left: 7px; }
+  /* line 91, main.scss */
+  #header div.inner div.header_info {
+    float: right;
+    padding: 40px 0px 15px 0px; }
+    /* line 96, main.scss */
+    #header div.inner div.header_info p {
+      padding-right: 7px;
+      text-align: right;
+      line-height: 15px; }
+    /* line 103, main.scss */
+    #header div.inner div.header_info img {
+      padding-left: 34px; }
+    /* line 108, main.scss */
+    #header div.inner div.header_info #calendar {
+      color: #f0831e;
+      text-align: right; }
+
+/* line 118, main.scss */
+#navi {
+  border-top: 1px solid #ccc6c2;
+  border-bottom: 1px solid #ccc6c2;
+  width: 100%;
+  height: 53px;
+  font-family: Meiryo;
+  font-size: 15px;
+  font-weight: bold; }
+
+/* line 129, main.scss */
+#navi div.inner div.menu ul li {
+  display: inline-block;
+  padding: 20px 0px 20px 0px;
+  margin-left: -4px; }
+
+/* line 136, main.scss */
+#navi div.inner div.menu ul li:last-child {
+  display: inline-block;
+  padding: 20px 0px 20px 0px;
+  margin-left: -4px; }
+
+/* line 143, main.scss */
+#navi div.inner div.menu ul li:first-child {
+  display: inline-block;
+  padding: 20px 0px 20px 0px;
+  margin-left: 0px; }
+
+/* line 150, main.scss */
+#navi div.inner div.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #73523f;
+  border-left: 2px solid #ccc6c2;
+  padding: 0px 32px 0px 32px;
+  text-align: center; }
+
+/* line 160, main.scss */
+#navi div.inner div.menu ul li:last-child a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #73523f;
+  border-right: 2px solid #ccc6c2;
+  padding: 0px 30px 0px 30px;
+  text-align: center; }
+
+/* line 170, main.scss */
+div.banner {
+  width: 100%;
+  height: 394px;
+  display: inline-block;
+  margin: 0px auto;
+  position: relative;
+  z-index: 200;
+  background: url(../images/bg_banner.jpg) repeat-x center top;
+  text-align: center;
+  float: left; }
+
+/* line 181, main.scss */
+div.banner div.inner div.slide {
+  height: 380px;
+  width: 100%;
+  max-width: 960px;
+  min-width: 960px;
+  display: block;
+  text-align: center;
+  margin: 0px auto; }
+
+/* line 190, main.scss */
+img.banner {
+  height: 380px;
+  width: 100%;
+  max-width: 960px;
+  min-width: 960px;
+  text-align: center;
+  margin: 0px auto;
+  position: relative; }
+
+/* line 200, main.scss */
+#article {
+  margin-top: 40px; }
+
+/* line 205, main.scss */
+#article div.inner #content {
+  width: 73%;
+  float: left; }
+
+/* line 211, main.scss */
+#article div.inner #aside {
+  width: 24%;
+  float: right; }
+
+/* line 217, main.scss */
+div.content_1 {
+  width: 100%;
+  float: left;
+  font-family: Meiryo;
+  font-size: 13px;
+  font-weight: normal; }
+
+/* line 226, main.scss */
+div.title {
+  font-size: 19px;
+  font-weight: 600;
+  font-family: Meiryo;
+  width: 100%;
+  float: left; }
+
+/* line 235, main.scss */
+div.nicdark_divider {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc6c23d; }
+
+/* line 242, main.scss */
+div.nicdark_divider.left > span {
+  float: left; }
+
+/* line 246, main.scss */
+div.nicdark_divider.big > span {
+  width: 140px;
+  height: 3px; }
+
+/* line 251, main.scss */
+.nicdark_divider > span {
+  display: block;
+  margin-top: 5px; }
+
+/* line 256, main.scss */
+.nicdark_radius {
+  border-radius: 5px 5px 5px 5px; }
+
+/* line 260, main.scss */
+div.image_1 {
+  margin-top: 25px;
+  float: left;
+  width: 37%; }
+
+/* line 267, main.scss */
+div.content_1 div.text_1 {
+  float: right;
+  margin-top: 20px;
+  width: 63%;
+  text-align: left; }
+
+/* line 275, main.scss */
+div.text_1 p {
+  text-align: left;
+  line-height: 20px;
+  width: 95%;
+  padding-bottom: 25px;
+  font-size: 13px;
+  padding-left: 30px; }
+
+/* line 285, main.scss */
+div.text_1 p strong {
+  font-weight: bold; }
+
+/* line 290, main.scss */
+div.content_2 {
+  margin-top: 40px; }
+
+/* line 295, main.scss */
+div.boxs {
+  margin-top: 30px;
+  float: left;
+  width: 100%; }
+
+/* line 302, main.scss */
+div.box:first-child {
+  width: 220px;
+  float: left;
+  border: 1px solid #ccc6c2;
+  height: 328px; }
+
+/* line 310, main.scss */
+div.box:nth-child(2) {
+  width: 220px;
+  float: left;
+  margin-left: 17px;
+  margin-right: 17px;
+  border: 1px solid #ccc6c2;
+  height: 328px; }
+
+/* line 320, main.scss */
+div.box:last-child {
+  width: 220px;
+  float: left;
+  border: 1px solid #ccc6c2;
+  height: 328px; }
+
+/* line 328, main.scss */
+div.box_text {
+  width: 100%;
+  float: left; }
+
+/* line 334, main.scss */
+div.box_text p {
+  padding: 7px 10px 7px 10px;
+  display: inline-block;
+  color: #73523f;
+  font-family: Meiryo;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px; }
+
+/* line 345, main.scss */
+div.box_text a {
+  padding-left: 12.5px;
+  display: inline-block;
+  margin-top: -4px; }
+
+/* line 352, main.scss */
+div.box_text a:hover {
+  padding-left: 12.5px;
+  display: inline-block;
+  margin-top: -4px;
+  opacity: 0.8; }
+
+/* line 360, main.scss */
+div.box:last-child a {
+  padding-left: 12.5px;
+  display: inline-block;
+  margin-top: 15px; }
+
+/* line 367, main.scss */
+div.content_3 {
+  margin-top: 45px; }
+
+/* line 372, main.scss */
+a.content3_btn {
+  display: block;
+  float: right;
+  margin: -25px 5px 0px 0px; }
+
+/* line 379, main.scss */
+a:hover.content3_btn {
+  display: block;
+  float: right;
+  margin: -25px 5px 0px 0px;
+  opacity: 0.8; }
+
+/* line 387, main.scss */
+div.text_3 {
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: normal;
+  float: left;
+  width: 100%; }
+
+/* line 396, main.scss */
+div.text3-row {
+  border-bottom: 3px dotted #ccc6c2;
+  padding: 20px 0px 20px 0px;
+  text-align: left; }
+
+/* line 403, main.scss */
+#aside {
+  margin-top: -5px;
+  font-family: Meiryo;
+  font-size: 13px;
+  font-weight: normal; }
+
+/* line 411, main.scss */
+div.bg_border_r_1 {
+  margin-top: 20px;
+  border: 5px double #ccc6c2;
+  float: left;
+  width: 96%; }
+
+/* line 420, main.scss */
+div.bg_border_r_1 h2 {
+  padding: 15px 7px 0px 7px;
+  font-weight: bold;
+  font-size: 17px; }
+
+/* line 427, main.scss */
+div.bg_border_r_1 ul {
+  width: 100%; }
+
+/* line 432, main.scss */
+div.bg_border_r_1 ul li {
+  padding: 10px 0px 10px 15px; }
+
+/* line 437, main.scss */
+div.bg_border_r_1 ul li.li_1 {
+  padding: 20px 0px 10px 5px; }
+
+/* line 442, main.scss */
+div.bg_border_r_1 ul li a {
+  text-decoration: none;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: normal;
+  color: #73523f; }
+
+/* line 451, main.scss */
+div.bg_border_r_1 ul li a:hover {
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: normal;
+  color: #73523f; }
+
+/* line 459, main.scss */
+div.nicdark_divider.small > span {
+  width: 140px;
+  height: 1px; }
+
+/* line 464, main.scss */
+img.aside_img_2 {
+  margin-top: 22px; }
+
+/* line 469, main.scss */
+a:hover img.aside_img_2 {
+  opacity: 0.8; }
+
+/* line 474, main.scss */
+img.aside_img_3 {
+  margin-top: 22px; }
+
+/* line 479, main.scss */
+a:hover img.aside_img_3 {
+  opacity: 0.8; }
+
+/* line 484, main.scss */
+div.bg_border_r_2 {
+  border: 5px solid #ccc6c2;
+  margin-top: 22px;
+  font-family: Meiryo;
+  font-size: 12px;
+  font-weight: normal;
+  color: #73523f; }
+
+/* line 494, main.scss */
+div.bg_border_r_2 h2 {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px 0px 20px 10px; }
+
+/* line 501, main.scss */
+div.bg_border_r_2 p {
+  line-height: 20px;
+  padding: 0px 0px 0px 10px; }
+
+/* line 507, main.scss */
+img.phone_pc {
+  padding: 5px 0px 10px 6px; }
+
+/* line 512, main.scss */
+img.aside_map {
+  padding: 20px 0px 0px 10px;
+  width: 90%; }
+
+/* line 518, main.scss */
+img.aside_button {
+  padding: 20px 0px 15px 10px;
+  width: 90%; }
+
+/* line 524, main.scss */
+#footer {
+  margin-top: 35px; }
+
+/* line 529, main.scss */
+div.bg_footer {
+  background: url(../images/footer_bg.jpg);
+  height: 270px; }
+
+/* line 535, main.scss */
+div.footer_info {
+  padding: 30px 0px 45px 0px;
+  float: left; }
+
+/* line 541, main.scss */
+div.footer_info p {
+  line-height: 20px;
+  padding: 10px 0px 10px 0px; }
+
+/* line 547, main.scss */
+div.menu_footer_1 {
+  margin: 30px 17px 45px 10px;
+  float: left;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #ccc6c2; }
+
+/* line 556, main.scss */
+div.menu_footer_1 ul li {
+  padding: 5px 10px 5px 0px;
+  display: inline-block; }
+
+/* line 562, main.scss */
+div.menu_footer_1 ul li img {
+  padding: 5px 10px 5px 30px; }
+
+/* line 567, main.scss */
+div.menu_footer_1 ul li a {
+  text-decoration: none;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: normal;
+  color: #73523f; }
+
+/* line 576, main.scss */
+div.menu_footer_2 {
+  margin: 30px 0px 45px 0px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ccc6c2;
+  background: #fff; }
+
+/* line 586, main.scss */
+div.menu_footer_2 ul li {
+  padding: 3px 10px 3px 0px; }
+
+/* line 591, main.scss */
+div.menu_footer_2 ul li a {
+  text-decoration: none;
+  font-family: Meiryo;
+  font-size: 13px;
+  font-weight: normal;
+  color: #73523f; }
+
+/* line 600, main.scss */
+div.copyright {
+  background: #f88e01;
+  text-align: center;
+  color: #fff;
+  font-family: Meiryo;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 10px 0px 10px 0px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */
