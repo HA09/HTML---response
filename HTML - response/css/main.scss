@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -115,58 +116,88 @@ div.clear-fix{
 
 }
 
-#navi
-{
-	border-top:1px solid #ccc6c2;
-	border-bottom:1px solid #ccc6c2; 
-	width:100%;
-	height:53px;
-	font-family:Meiryo;
-	font-size:15px;
-	font-weight:bold;
+#navi {
+  border-top: 1px solid #ccc6c2;
+  border-bottom: 1px solid #ccc6c2;
+  width: 100%;
+  height: 55px;
+  font-family: Meiryo;
+  font-size: 15px;
+  font-weight: bold; 
 
-	div.inner div.menu ul li
-	{
-		display:inline-block;
-		padding:20px 0px 20px 0px;
-		margin-left:-4px;
+  div.inner div.menu ul {
+	  text-align: center;
+	  text-transform:uppercase;
+
+	 li{
+		  color: #73523f;
+		  display: inline-block;
+		  width: 137px;
+		  height: 40px;
+		  margin-left: -5px;
+		  margin-top: 15px;
+
+		  a {
+			  text-decoration: none;
+			  color: #73523f;
+			  display: block;
+			  border-left: 2px solid #ccc6c2;
+			  padding:5px;
+			}
+
+			&:hover{
+			  color: #fff;
+			  background: #fe9407;
+			}
+
+		}
+
+	 li:last-child a {
+		  text-decoration: none;
+		  color: #73523f;
+		  display: block;
+		  border-right: 2px solid #ccc6c2;
+		  padding:5px;
+		}
+
 	}
 
+}
 
-	div.inner div.menu ul li:last-child
-	{
-		display: inline-block;
-	    padding: 20px 0px 20px 0px;
-	    margin-left: -4px;
-	}
+#navi div.inner div.menu ul li ul.sub-menu {
+  display: none;
+  position: absolute;
+  z-index:1000;
+  background: #ffc472;
+  font-size:13px;
+  margin-top: 15px;
+}
+#navi div.inner div.menu ul li {
+  position: relative;
+}
+#navi div.inner div.menu ul li:hover ul.sub-menu {
+  display: block;
+}
+#navi div.inner div.menu ul li ul.sub-menu li {
+  margin-left: 0 !important;
+  border-bottom: 1px solid #73523f;
+}
 
-	div.inner div.menu ul li:first-child
-	{
-		display:inline-block;
-		padding:20px 0px 20px 0px;
-		margin-left:0px;
-	}
+#navi div.inner div.menu ul li ul.sub-menu li a {
+  font-size:13px;
+}
 
-	div.inner div.menu ul li a
-	{
-		text-decoration:none;
-		text-transform:uppercase;
-		color: #73523f;
-		border-left: 2px solid #ccc6c2;
-		padding:0px 32px 0px 32px;
-		text-align:center;
-	}
+#navi div.inner div.menu ul li ul.sub-menu li a:hover {
+  background: #fe9407;
+}
 
-	div.inner div.menu ul li:last-child a
-	{
-		text-decoration: none;
-	    text-transform: uppercase;
-	    color: #73523f;
-	    border-right: 2px solid #ccc6c2;
-	    padding: 0px 30px 0px 30px;
-	    text-align: center;
-	}
-
+label.show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: #fe9407;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
 }
 
 div.banner
@@ -432,15 +463,15 @@ div.text3-row
 	font-family:Meiryo;
 	font-size:13px;
 	font-weight:normal;
-}
 
-div.bg_border_r_1
-{
-	margin-top:20px;
-	border:5px double #ccc6c2;  
-	float:left;
-	width:96%;
+	div.bg_border_r_1
+	{
+		margin-top:20px;
+		border:5px double #ccc6c2;  
+		float:left;
+		width:96%;
 
+	}
 }
 
 div.bg_border_r_1 h2
@@ -562,12 +593,12 @@ div.footer_info
 {
 	padding:30px 0px 45px 0px;
 	float:left;
-}
 
-div.footer_info p
-{
-	line-height:20px;
-	padding:10px 0px 10px 0px;
+	p
+	{
+		line-height:20px;
+		padding:10px 0px 10px 0px;
+	}
 }
 
 div.menu_footer_1
@@ -577,26 +608,28 @@ div.menu_footer_1
     width: 300px;
     height: 200px;
     border: 2px solid #ccc6c2;
-}
 
-div.menu_footer_1 ul li
-{
-	padding:5px 10px 5px 0px;
-	display:inline-block;
-}
+    ul li
+	{
+		padding:5px 10px 5px 0px;
+		display:inline-block;
 
-div.menu_footer_1 ul li img
-{
-	padding:5px 10px 5px 30px;
-}
+		img
+		{
+			padding:5px 10px 5px 30px;
+		}
 
-div.menu_footer_1 ul li a
-{
-	text-decoration:none;
-	font-family:Meiryo;
-	font-size:14px;
-	font-weight:normal;
-	color: #73523f;
+		a
+		{
+			text-decoration:none;
+			font-family:Meiryo;
+			font-size:14px;
+			font-weight:normal;
+			color: #73523f;
+		}
+
+	}
+
 }
 
 div.menu_footer_2
@@ -607,20 +640,22 @@ div.menu_footer_2
     height: 200px;
     border: 2px solid #ccc6c2;
 	background:#fff;
-}
 
-div.menu_footer_2 ul li
-{
-	padding:3px 10px 3px 0px;
-}
+	ul li
+	{
+		padding:3px 10px 3px 0px;
 
-div.menu_footer_2 ul li a
-{
-	text-decoration:none;
-	font-family:Meiryo;
-	font-size:13px;
-	font-weight:normal;
-	color: #73523f;
+		a
+		{
+			text-decoration:none;
+			font-family:Meiryo;
+			font-size:13px;
+			font-weight:normal;
+			color: #73523f;
+		}
+
+	}
+
 }
 
 div.copyright
